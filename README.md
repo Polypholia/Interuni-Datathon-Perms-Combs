@@ -4,7 +4,7 @@ The train.csv was splitted into 2 into train_version_1.csv and train_version_2.c
 
 Copilot and ChatGPT 5 were used to help debug and find formulate strategies and techniques.
 
-##Reproduce Files
+Reproduce Files:
 To reproduce the results, change the file directory after downloading them via 
 
 git https://github.com/Polypholia/Interuni-Datathon-Perms-Combs/tree/main. 
