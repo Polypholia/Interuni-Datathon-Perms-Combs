@@ -1,0 +1,2577 @@
+---
+title: "gas test"
+editor: visual
+format:
+  html:
+    embed-resources: true
+    toc: true
+    code-fold: true
+---
+
+# Gas Concentration and Feature Analysis
+
+This analysis examines the relationship between **gas concentration** and each measured feature in the dataset. Each plot shows concentration on the x-axis and the selected feature on the y-axis, with observations coloured by `gas_class`.
+
+The jittered points make it easier to see individual observations, while the linear trend line provides a simple visual indication of the relationship between concentration and the feature.
+
+The same plotting procedure is applied to every feature in the dataset so that the features can be compared consistently.
+
+## Concentration vs Feat 1
+
+The following plot shows the relationship between gas concentration and `feat_1`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_1, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 1", x = "Concentration", y = "Feat 1")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 2
+
+The following plot shows the relationship between gas concentration and `feat_2`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_2, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 2", x = "Concentration", y = "Feat 2")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 3
+
+The following plot shows the relationship between gas concentration and `feat_3`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_3, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 3", x = "Concentration", y = "Feat 3")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 4
+
+The following plot shows the relationship between gas concentration and `feat_4`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_4, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 4", x = "Concentration", y = "Feat 4")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 5
+
+The following plot shows the relationship between gas concentration and `feat_5`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_5, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 5", x = "Concentration", y = "Feat 5")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 6
+
+The following plot shows the relationship between gas concentration and `feat_6`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_6, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 6", x = "Concentration", y = "Feat 6")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 7
+
+The following plot shows the relationship between gas concentration and `feat_7`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_7, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 7", x = "Concentration", y = "Feat 7")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 8
+
+The following plot shows the relationship between gas concentration and `feat_8`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_8, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 8", x = "Concentration", y = "Feat 8")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 9
+
+The following plot shows the relationship between gas concentration and `feat_9`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_9, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 9", x = "Concentration", y = "Feat 9")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 10
+
+The following plot shows the relationship between gas concentration and `feat_10`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_10, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 10", x = "Concentration", y = "Feat 10")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 11
+
+The following plot shows the relationship between gas concentration and `feat_11`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_11, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 11", x = "Concentration", y = "Feat 11")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 12
+
+The following plot shows the relationship between gas concentration and `feat_12`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_12, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 12", x = "Concentration", y = "Feat 12")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 13
+
+The following plot shows the relationship between gas concentration and `feat_13`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_13, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 13", x = "Concentration", y = "Feat 13")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 14
+
+The following plot shows the relationship between gas concentration and `feat_14`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_14, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 14", x = "Concentration", y = "Feat 14")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 15
+
+The following plot shows the relationship between gas concentration and `feat_15`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_15, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 15", x = "Concentration", y = "Feat 15")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 16
+
+The following plot shows the relationship between gas concentration and `feat_16`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_16, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 16", x = "Concentration", y = "Feat 16")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 17
+
+The following plot shows the relationship between gas concentration and `feat_17`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_17, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 17", x = "Concentration", y = "Feat 17")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 18
+
+The following plot shows the relationship between gas concentration and `feat_18`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_18, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 18", x = "Concentration", y = "Feat 18")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 19
+
+The following plot shows the relationship between gas concentration and `feat_19`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_19, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 19", x = "Concentration", y = "Feat 19")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 20
+
+The following plot shows the relationship between gas concentration and `feat_20`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_20, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 20", x = "Concentration", y = "Feat 20")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 21
+
+The following plot shows the relationship between gas concentration and `feat_21`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_21, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 21", x = "Concentration", y = "Feat 21")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 22
+
+The following plot shows the relationship between gas concentration and `feat_22`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_22, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 22", x = "Concentration", y = "Feat 22")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 23
+
+The following plot shows the relationship between gas concentration and `feat_23`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_23, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 23", x = "Concentration", y = "Feat 23")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 24
+
+The following plot shows the relationship between gas concentration and `feat_24`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_24, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 24", x = "Concentration", y = "Feat 24")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 25
+
+The following plot shows the relationship between gas concentration and `feat_25`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_25, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 25", x = "Concentration", y = "Feat 25")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 26
+
+The following plot shows the relationship between gas concentration and `feat_26`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_26, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 26", x = "Concentration", y = "Feat 26")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 27
+
+The following plot shows the relationship between gas concentration and `feat_27`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_27, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 27", x = "Concentration", y = "Feat 27")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 28
+
+The following plot shows the relationship between gas concentration and `feat_28`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_28, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 28", x = "Concentration", y = "Feat 28")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 29
+
+The following plot shows the relationship between gas concentration and `feat_29`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_29, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 29", x = "Concentration", y = "Feat 29")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 30
+
+The following plot shows the relationship between gas concentration and `feat_30`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_30, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 30", x = "Concentration", y = "Feat 30")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 31
+
+The following plot shows the relationship between gas concentration and `feat_31`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_31, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 31", x = "Concentration", y = "Feat 31")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 32
+
+The following plot shows the relationship between gas concentration and `feat_32`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_32, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 32", x = "Concentration", y = "Feat 32")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 33
+
+The following plot shows the relationship between gas concentration and `feat_33`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_33, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 33", x = "Concentration", y = "Feat 33")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 34
+
+The following plot shows the relationship between gas concentration and `feat_34`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_34, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 34", x = "Concentration", y = "Feat 34")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 35
+
+The following plot shows the relationship between gas concentration and `feat_35`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_35, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 35", x = "Concentration", y = "Feat 35")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 36
+
+The following plot shows the relationship between gas concentration and `feat_36`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_36, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 36", x = "Concentration", y = "Feat 36")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 37
+
+The following plot shows the relationship between gas concentration and `feat_37`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_37, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 37", x = "Concentration", y = "Feat 37")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 38
+
+The following plot shows the relationship between gas concentration and `feat_38`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_38, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 38", x = "Concentration", y = "Feat 38")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 39
+
+The following plot shows the relationship between gas concentration and `feat_39`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_39, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 39", x = "Concentration", y = "Feat 39")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 40
+
+The following plot shows the relationship between gas concentration and `feat_40`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_40, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 40", x = "Concentration", y = "Feat 40")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 41
+
+The following plot shows the relationship between gas concentration and `feat_41`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_41, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 41", x = "Concentration", y = "Feat 41")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 42
+
+The following plot shows the relationship between gas concentration and `feat_42`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_42, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 42", x = "Concentration", y = "Feat 42")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 43
+
+The following plot shows the relationship between gas concentration and `feat_43`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_43, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 43", x = "Concentration", y = "Feat 43")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 44
+
+The following plot shows the relationship between gas concentration and `feat_44`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_44, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 44", x = "Concentration", y = "Feat 44")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 45
+
+The following plot shows the relationship between gas concentration and `feat_45`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_45, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 45", x = "Concentration", y = "Feat 45")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 46
+
+The following plot shows the relationship between gas concentration and `feat_46`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_46, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 46", x = "Concentration", y = "Feat 46")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 47
+
+The following plot shows the relationship between gas concentration and `feat_47`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_47, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 47", x = "Concentration", y = "Feat 47")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 48
+
+The following plot shows the relationship between gas concentration and `feat_48`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_48, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 48", x = "Concentration", y = "Feat 48")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 49
+
+The following plot shows the relationship between gas concentration and `feat_49`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_49, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 49", x = "Concentration", y = "Feat 49")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 50
+
+The following plot shows the relationship between gas concentration and `feat_50`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_50, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 50", x = "Concentration", y = "Feat 50")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 51
+
+The following plot shows the relationship between gas concentration and `feat_51`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_51, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 51", x = "Concentration", y = "Feat 51")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 52
+
+The following plot shows the relationship between gas concentration and `feat_52`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_52, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 52", x = "Concentration", y = "Feat 52")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 53
+
+The following plot shows the relationship between gas concentration and `feat_53`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_53, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 53", x = "Concentration", y = "Feat 53")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 54
+
+The following plot shows the relationship between gas concentration and `feat_54`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_54, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 54", x = "Concentration", y = "Feat 54")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 55
+
+The following plot shows the relationship between gas concentration and `feat_55`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_55, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 55", x = "Concentration", y = "Feat 55")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 56
+
+The following plot shows the relationship between gas concentration and `feat_56`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_56, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 56", x = "Concentration", y = "Feat 56")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 57
+
+The following plot shows the relationship between gas concentration and `feat_57`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_57, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 57", x = "Concentration", y = "Feat 57")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 58
+
+The following plot shows the relationship between gas concentration and `feat_58`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_58, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 58", x = "Concentration", y = "Feat 58")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 59
+
+The following plot shows the relationship between gas concentration and `feat_59`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_59, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 59", x = "Concentration", y = "Feat 59")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 60
+
+The following plot shows the relationship between gas concentration and `feat_60`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_60, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 60", x = "Concentration", y = "Feat 60")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 61
+
+The following plot shows the relationship between gas concentration and `feat_61`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_61, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 61", x = "Concentration", y = "Feat 61")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 62
+
+The following plot shows the relationship between gas concentration and `feat_62`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_62, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 62", x = "Concentration", y = "Feat 62")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 63
+
+The following plot shows the relationship between gas concentration and `feat_63`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_63, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 63", x = "Concentration", y = "Feat 63")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 64
+
+The following plot shows the relationship between gas concentration and `feat_64`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_64, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 64", x = "Concentration", y = "Feat 64")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 65
+
+The following plot shows the relationship between gas concentration and `feat_65`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_65, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 65", x = "Concentration", y = "Feat 65")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 66
+
+The following plot shows the relationship between gas concentration and `feat_66`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_66, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 66", x = "Concentration", y = "Feat 66")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 67
+
+The following plot shows the relationship between gas concentration and `feat_67`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_67, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 67", x = "Concentration", y = "Feat 67")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 68
+
+The following plot shows the relationship between gas concentration and `feat_68`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_68, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 68", x = "Concentration", y = "Feat 68")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 69
+
+The following plot shows the relationship between gas concentration and `feat_69`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_69, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 69", x = "Concentration", y = "Feat 69")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 70
+
+The following plot shows the relationship between gas concentration and `feat_70`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_70, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 70", x = "Concentration", y = "Feat 70")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 71
+
+The following plot shows the relationship between gas concentration and `feat_71`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_71, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 71", x = "Concentration", y = "Feat 71")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 72
+
+The following plot shows the relationship between gas concentration and `feat_72`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_72, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 72", x = "Concentration", y = "Feat 72")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 73
+
+The following plot shows the relationship between gas concentration and `feat_73`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_73, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 73", x = "Concentration", y = "Feat 73")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 74
+
+The following plot shows the relationship between gas concentration and `feat_74`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_74, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 74", x = "Concentration", y = "Feat 74")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 75
+
+The following plot shows the relationship between gas concentration and `feat_75`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_75, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 75", x = "Concentration", y = "Feat 75")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 76
+
+The following plot shows the relationship between gas concentration and `feat_76`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_76, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 76", x = "Concentration", y = "Feat 76")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 77
+
+The following plot shows the relationship between gas concentration and `feat_77`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_77, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 77", x = "Concentration", y = "Feat 77")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 78
+
+The following plot shows the relationship between gas concentration and `feat_78`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_78, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 78", x = "Concentration", y = "Feat 78")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 79
+
+The following plot shows the relationship between gas concentration and `feat_79`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_79, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 79", x = "Concentration", y = "Feat 79")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 80
+
+The following plot shows the relationship between gas concentration and `feat_80`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_80, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 80", x = "Concentration", y = "Feat 80")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 81
+
+The following plot shows the relationship between gas concentration and `feat_81`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_81, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 81", x = "Concentration", y = "Feat 81")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 82
+
+The following plot shows the relationship between gas concentration and `feat_82`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_82, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 82", x = "Concentration", y = "Feat 82")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 83
+
+The following plot shows the relationship between gas concentration and `feat_83`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_83, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 83", x = "Concentration", y = "Feat 83")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 84
+
+The following plot shows the relationship between gas concentration and `feat_84`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_84, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 84", x = "Concentration", y = "Feat 84")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 85
+
+The following plot shows the relationship between gas concentration and `feat_85`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_85, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 85", x = "Concentration", y = "Feat 85")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 86
+
+The following plot shows the relationship between gas concentration and `feat_86`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_86, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 86", x = "Concentration", y = "Feat 86")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 87
+
+The following plot shows the relationship between gas concentration and `feat_87`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_87, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 87", x = "Concentration", y = "Feat 87")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 88
+
+The following plot shows the relationship between gas concentration and `feat_88`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_88, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 88", x = "Concentration", y = "Feat 88")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 89
+
+The following plot shows the relationship between gas concentration and `feat_89`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_89, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 89", x = "Concentration", y = "Feat 89")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 90
+
+The following plot shows the relationship between gas concentration and `feat_90`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_90, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 90", x = "Concentration", y = "Feat 90")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 91
+
+The following plot shows the relationship between gas concentration and `feat_91`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_91, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 91", x = "Concentration", y = "Feat 91")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 92
+
+The following plot shows the relationship between gas concentration and `feat_92`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_92, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 92", x = "Concentration", y = "Feat 92")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 93
+
+The following plot shows the relationship between gas concentration and `feat_93`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_93, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 93", x = "Concentration", y = "Feat 93")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 94
+
+The following plot shows the relationship between gas concentration and `feat_94`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_94, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 94", x = "Concentration", y = "Feat 94")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 95
+
+The following plot shows the relationship between gas concentration and `feat_95`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_95, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 95", x = "Concentration", y = "Feat 95")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 96
+
+The following plot shows the relationship between gas concentration and `feat_96`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_96, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 96", x = "Concentration", y = "Feat 96")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 97
+
+The following plot shows the relationship between gas concentration and `feat_97`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_97, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 97", x = "Concentration", y = "Feat 97")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 98
+
+The following plot shows the relationship between gas concentration and `feat_98`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_98, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 98", x = "Concentration", y = "Feat 98")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 99
+
+The following plot shows the relationship between gas concentration and `feat_99`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_99, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 99", x = "Concentration", y = "Feat 99")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 100
+
+The following plot shows the relationship between gas concentration and `feat_100`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_100, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 100", x = "Concentration", y = "Feat 100")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 101
+
+The following plot shows the relationship between gas concentration and `feat_101`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_101, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 101", x = "Concentration", y = "Feat 101")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 102
+
+The following plot shows the relationship between gas concentration and `feat_102`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_102, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 102", x = "Concentration", y = "Feat 102")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 103
+
+The following plot shows the relationship between gas concentration and `feat_103`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_103, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 103", x = "Concentration", y = "Feat 103")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 104
+
+The following plot shows the relationship between gas concentration and `feat_104`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_104, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 104", x = "Concentration", y = "Feat 104")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 105
+
+The following plot shows the relationship between gas concentration and `feat_105`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_105, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 105", x = "Concentration", y = "Feat 105")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 106
+
+The following plot shows the relationship between gas concentration and `feat_106`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_106, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 106", x = "Concentration", y = "Feat 106")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 107
+
+The following plot shows the relationship between gas concentration and `feat_107`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_107, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 107", x = "Concentration", y = "Feat 107")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 108
+
+The following plot shows the relationship between gas concentration and `feat_108`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_108, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 108", x = "Concentration", y = "Feat 108")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 109
+
+The following plot shows the relationship between gas concentration and `feat_109`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_109, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 109", x = "Concentration", y = "Feat 109")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 110
+
+The following plot shows the relationship between gas concentration and `feat_110`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_110, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 110", x = "Concentration", y = "Feat 110")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 111
+
+The following plot shows the relationship between gas concentration and `feat_111`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_111, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 111", x = "Concentration", y = "Feat 111")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 112
+
+The following plot shows the relationship between gas concentration and `feat_112`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_112, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 112", x = "Concentration", y = "Feat 112")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 113
+
+The following plot shows the relationship between gas concentration and `feat_113`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_113, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 113", x = "Concentration", y = "Feat 113")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 114
+
+The following plot shows the relationship between gas concentration and `feat_114`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_114, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 114", x = "Concentration", y = "Feat 114")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 115
+
+The following plot shows the relationship between gas concentration and `feat_115`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_115, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 115", x = "Concentration", y = "Feat 115")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 116
+
+The following plot shows the relationship between gas concentration and `feat_116`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_116, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 116", x = "Concentration", y = "Feat 116")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 117
+
+The following plot shows the relationship between gas concentration and `feat_117`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_117, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 117", x = "Concentration", y = "Feat 117")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 118
+
+The following plot shows the relationship between gas concentration and `feat_118`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_118, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 118", x = "Concentration", y = "Feat 118")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 119
+
+The following plot shows the relationship between gas concentration and `feat_119`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_119, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 119", x = "Concentration", y = "Feat 119")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 120
+
+The following plot shows the relationship between gas concentration and `feat_120`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_120, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 120", x = "Concentration", y = "Feat 120")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 121
+
+The following plot shows the relationship between gas concentration and `feat_121`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_121, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 121", x = "Concentration", y = "Feat 121")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 122
+
+The following plot shows the relationship between gas concentration and `feat_122`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_122, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 122", x = "Concentration", y = "Feat 122")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 123
+
+The following plot shows the relationship between gas concentration and `feat_123`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_123, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 123", x = "Concentration", y = "Feat 123")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 124
+
+The following plot shows the relationship between gas concentration and `feat_124`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_124, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 124", x = "Concentration", y = "Feat 124")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 125
+
+The following plot shows the relationship between gas concentration and `feat_125`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_125, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 125", x = "Concentration", y = "Feat 125")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 126
+
+The following plot shows the relationship between gas concentration and `feat_126`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_126, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 126", x = "Concentration", y = "Feat 126")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 127
+
+The following plot shows the relationship between gas concentration and `feat_127`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_127, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 127", x = "Concentration", y = "Feat 127")
+
+ggplotly(p)
+```
+
+## Concentration vs Feat 128
+
+The following plot shows the relationship between gas concentration and `feat_128`. The observations are coloured according to gas class, allowing differences between gas classes to be visually compared.
+
+```{r message=FALSE, warning=FALSE}
+library(readr)
+library(ggplot2)
+library(plotly)
+
+my_data <- read_csv("/Users/sebastian/Downloads/train_version_1.csv")
+
+p <- ggplot(my_data, aes(x = concentration, y = feat_128, color = as.factor(gas_class))) +
+  geom_jitter(width = 1, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_x_continuous(limits = c(0, 1000), breaks = seq(0, 1000, by = 100)) +
+  labs(title = "Concentration vs Feat 128", x = "Concentration", y = "Feat 128")
+
+ggplotly(p)
+```
