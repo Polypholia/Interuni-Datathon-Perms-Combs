@@ -45,10 +45,12 @@ OUTPUT_FILE = (
 # LOAD DATA
 # =========================================================
 
+# Half of the original train.csv (see ReadME on why it was split)
 train1 = pd.read_csv(
     "/Users/sebastian/Downloads/train_version_1.csv"
 )
 
+# Other Half of the original train.csv 
 train2 = pd.read_csv(
     "/Users/sebastian/Downloads/train_version_2.csv"
 )
