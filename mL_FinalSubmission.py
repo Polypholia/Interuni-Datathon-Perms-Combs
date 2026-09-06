@@ -31,11 +31,14 @@ RAW_WEIGHT = 0.30
 BATCH_STD_WEIGHT = 0.50
 BATCH_CENTER_WEIGHT = 0.20
 
+# Ensemble weights were experimentally tuned usingleaderboard feedback 
+
 RAW_C = 0.10
 BATCH_STD_C = 0.30
 BATCH_CENTER_C = 0.20
 
-PCA_COMPONENTS = 20
+# PCA_COMPONENTS = 20 was experimentally found to perform better
+PCA_COMPONENTS = 20 
 
 OUTPUT_FILE = (
     "/Users/sebastian/Downloads/submission_085882.csv"
